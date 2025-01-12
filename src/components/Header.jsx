@@ -3,19 +3,21 @@ import { State } from "../context/statecontext";
 
 const Header = () => {
   const { handlePrint } = useContext(State);
+
   return (
     <>
       <header className="flex flex-col items-center justify-center mb-5 xl:flex-row xl:justify-between">
-        <div>
-          <h1 className="font-bold tracking-wide text-6xl mb-6">
-            <img
-              src="https://missing-someone.onrender.com/static/media/ajaylogo.71fa906f25ee5d96ffd4.png"
-              alt=""
-              className="h-20 mr-6 p-2 m-6"
-            />
-          </h1>
+        <div className="flex items-center justify-start w-20">
+          <img
+            src="https://missing-someone.onrender.com/static/media/ajaylogo.71fa906f25ee5d96ffd4.png"
+            alt=""
+            className="h-20 mr-4 p-2 m-6"
+          />
         </div>
-
+        <div className="flex items-center justify-between flex-wrap font-bold text-6xl">
+          INVOICE
+        </div>
+        {/* 
         <div>
           <ul className="flex items-center justify-between flex-wrap">
             <li>
@@ -37,7 +39,7 @@ const Header = () => {
               </button>
             </li>
           </ul>
-        </div>
+        </div> */}
       </header>
     </>
   );

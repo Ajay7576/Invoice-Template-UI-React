@@ -24,7 +24,7 @@ const Invoice = () => {
                hover:text-blue-500
                transition-all duration-300"
             >
-              Edit Information
+             Preview Invoice
             </button>
           </div>
         </main>
